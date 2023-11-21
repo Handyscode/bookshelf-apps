@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf Apps</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Bookshelf Apps</h1>
+  </header>
+  <div class="container">
+    <div class="input-content-parent">
+      <div class="card">
+        <h1 class="title">Tambah Data Buku</h1>
+        <form action="#" id="bookForm">
+          <div class="mb-3">
+            <label for="judul">Judul Buku</label>
+            <input type="text" name="judul" id="judul" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="penulis">Penulis</label>
+            <input type="text" name="penulis" id="penulis" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="tahun">Tahun Rilis</label>
+            <input type="number" name="tahun" id="tahun" class="form-control">
+          </div>
+          <div class="switch-title">
+            <p>Sudah Dibaca</p>
+          </div>
+          <label class="mb-3 switch-label">
+            <div class="switch">
+              <div class="kotak"></div>
+            </div>
+            <input type="checkbox" class="hidden checkBox" name="isread">
+          </label>
+          <button type="submit" class="submitBtn">Tambah Data Buku</button>
+        </form>
+      </div>
+      <div class="card cari-buku">
+        <h1 class="title">Cari Buku</h1>
+        <div class="mb-3">
+          <input type="text" name="bookVal" id="searchBook" class="form-control" placeholder="Cari buku dengan menuliskan judul buku">
+        </div>
+      </div>
+    </div>
+    <div class="book-content-parent">
+      <div class="card">
+        <h1 class="title">Buku Belum Dibaca</h1>
+        <div class="booklist" id="notRead">
+        </div>
+      </div>
+      <div class="card">
+        <h1 class="title">Buku Sudah Dibaca</h1>
+        <div class="booklist" id="hasRead"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+</body>
+</html>
